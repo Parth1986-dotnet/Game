@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Ninja Javascript Game | Parth Vaidya | Founder & Coders</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="./Script.js"></script>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <script src="Script.js"></script>
+    <!-- Game Heading -->
+    <div class="gameHeading">
+        <p>Ball Ninja Javascript Game</p>
+    </div>
+
+    <!-- Main Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Front Body -->
+    <div class="startGame" id="startGame">
+        <div class="home">
+            <h1>Ball Ninja<br> <span><svg viewBox="-1 0 301 141" fill="white" width="100" class="site-logo" stroke-width="1"  align-items="center" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="5" height="5">
+                    <path d="M-1,1 l2,-2 M0,5 l5,-5 M4,6 l2,-2" stroke="black" strokewidth="2"></path>
+                  </pattern>
+                </defs>
+                <g id="square">
+                  <rect width="100" height="100" stroke="black"></rect>
+                  <rect width="100" height="50" fill="black"></rect>
+                  <rect width="50" height="50" x="50" y="50" fill="url(#diagonalHatch)"></rect>
+                </g>
+                <g id="triangle" transform="translate(8, 0)">
+                  <polygon points="100,100 150,0 200, 100" stroke="black"></polygon>
+                  <polygon points="100,100 125,50 150,100" fill="black"></polygon>
+                  <polygon points="150, 100 175,50, 200,100" fill="black"></polygon>
+                  <polygon points="125,50 150,100 175,50" fill="url(#diagonalHatch)"></polygon>
+                </g>
+                <g id="circle">
+                  <ellipse cx="250" cy="50" rx="50" ry="50" stroke="black"></ellipse>
+                  <ellipse cx="250" cy="50" rx="22" ry="22" fill="url(#diagonalHatch)"></ellipse>
+                  <path d="M250,0 a1,1 0 0,1 0,100" fill="black"></path>
+                </g>
+                <text x="0" y="128" text-length="301" length-adjust="spacingAndGlyphs" stroke="none" fill="white" style="font-size: 26px; text-transform: uppercase;">
+                  Founders and coders
+                </text>
+              </svg></span></h1>
+            <button type="button" onclick="startGameBtn"id="startGameBtn"> Play<i class="fa-solid fa-gamepad"></i></button>
+            <p>Your High Score: <span id="homeHighScore"></span></p>
+        </div>
+        <p class="copyRight">&#169; Created By Fouders & Coders : Parth Vaidya</i>  - 2023</p>
+        
+        
+    </div>
+
+    <!-- Alert Count Down Timer  -->
+    <div class="countDown" id="countDownContainer">
+        <h1></h1>
+    </div>
+
+    <!-- In Game Body -->
+    <div id="inGameContainer">
+        <div class="scoreDiv">
+            <p>Score: <span id="score"></span></p>
+            <p>High Score: <span id="highScore"></span></p>
+        </div>
+        <div class="gameCountTime">
+            <h1 id="gameMinuteAndSecond">00 : 00</h1>
+        </div>
+        <div id="strikeCountDiv">
+            <h1 class="strikeCount">1x</h1>
+        </div>
+    </div>
+
+    <div id="gameEndDiv">
+        <div class="gameEndContainer">
+            <p>Your Score: <span id="endGameScore"></span></p>
+            <button id="returnHome">Return Home <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+    <script src="Script.js"></script>
+</body>
+</body>
+</html>
